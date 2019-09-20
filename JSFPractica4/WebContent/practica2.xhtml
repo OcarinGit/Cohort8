@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>Segunda Práctica</title>
+</h:head>
+<h:body>
+		<h2>Práctica JSF con Modelo de Datos</h2>
+		<h:form>
+			<p>
+				Nombre: <h:inputText value="#{persona1.nombrePersona}"></h:inputText>
+			</p>
+			<p>
+				Apellido: <h:inputText value="#{persona1.apellidoPersona}"></h:inputText>
+			</p>
+			<p>
+				<h:commandButton value="Enviar Datos" action="practica2response"></h:commandButton>
+			</p>
+		</h:form>
+</h:body>
+</html>

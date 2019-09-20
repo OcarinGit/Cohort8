@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<title>Práctica 3 - Request con annotations</title>
+</h:head>
+
+<h:body>
+	<h:form>
+	<p>
+		Introduce tu Mensaje para la humanidad:
+		<h:inputText value="#{mensajitu.mensaje}"></h:inputText>
+	</p>
+	<p>
+		<h:commandButton value="Enviar Mensaje a la humanidad" action="practica3response"></h:commandButton>
+	</p>
+	</h:form>
+</h:body>
+</html>

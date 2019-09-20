@@ -1,0 +1,7 @@
+127.0.0.1 - - [05/Aug/2018:02:00:51 -0500] "GET / HTTP/1.1" 404 993
+0:0:0:0:0:0:0:1 - - [05/Aug/2018:02:00:54 -0500] "GET /AjaxGson/ HTTP/1.1" 200 518
+0:0:0:0:0:0:0:1 - - [05/Aug/2018:02:00:57 -0500] "GET /AjaxGson/practica1gson.jsp HTTP/1.1" 200 1267
+0:0:0:0:0:0:0:1 - - [05/Aug/2018:02:00:57 -0500] "GET /AjaxGson/script/practica1gson.js HTTP/1.1" 200 1222
+0:0:0:0:0:0:0:1 - - [05/Aug/2018:02:00:57 -0500] "GET /AjaxGson/css/style.css HTTP/1.1" 200 22
+0:0:0:0:0:0:0:1 - - [05/Aug/2018:02:01:07 -0500] "GET /AjaxGson/practica2gson.jsp HTTP/1.1" 200 1423
+0:0:0:0:0:0:0:1 - - [05/Aug/2018:02:01:07 -0500] "GET /AjaxGson/script/practica2gson.js HTTP/1.1" 200 1222

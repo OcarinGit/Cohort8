@@ -1,0 +1,62 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" http-equiv="X-UA-Conpatible" />
+	<title>JSF Bootstrap</title>
+	<h:outputStylesheet library="css" name="bootstrap.min.css"> </h:outputStylesheet>
+	<h:outputStylesheet library="css" name="style.css"></h:outputStylesheet>
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css"/> -->
+	<!-- <style type="text/css">
+		.col-xs-updated{
+			width: 92%;
+		}
+	</style> -->
+
+</h:head>
+<h:body>
+	<div class="container">
+		<div class="navbar navbar-inverse">
+			<h2 class="navbar-brand">Practica de JSF y Bootstrap</h2>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-xs-updated">
+				<h:form id="frmEstudiante" styleClass="form-horizontal">
+					<div class="form-group">
+						<h:outputLabel styleClass="control-label col-sm-2" value="Nombre:"></h:outputLabel>
+						<div class="col-sm-10">
+							<h:inputText styleClass="form-control" value="#{estudianteBean.nombreEstudiante}"></h:inputText>
+						</div>
+					</div>
+					<div class="form-group">
+						<h:outputLabel styleClass="control-label col-sm-2" value="Apellido:"></h:outputLabel>
+						<div class="col-sm-10">
+							<h:inputText styleClass="form-control" value="#{estudianteBean.apellidoEstudiante}"></h:inputText>
+						</div>
+					</div>
+					<div class="form-group">
+						<h:outputLabel styleClass="control-label col-sm-2" value="Edad:"></h:outputLabel>
+						<div class="col-sm-10">
+							<h:inputText styleClass="form-control" value="#{estudianteBean.edadEstudiante}"></h:inputText>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<h:commandButton styleClass="btn btn-default" value="Crear Estudiante"
+								action="#{estudianteBean.FormularioAgregarEstudiante}"></h:commandButton>
+						</div>
+					</div>
+				</h:form>
+			</div>
+		</div>
+	</div>
+	<script src="scripts/jquery-3.3.1.min.js"></script>
+	<!-- <script src="scripts/bootstrap.min.js"></script>-->
+	<!-- <h:outputScript library="js" name="scripts/jquery-3.3.1.min.js"></h:outputScript> -->
+	<h:outputScript library="js" name="bootstrap.min.js"></h:outputScript>
+	<h:outputScript library="js" name="myScriptitu.js"></h:outputScript>
+</h:body>
+</html>

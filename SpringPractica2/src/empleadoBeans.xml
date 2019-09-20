@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:context ="http://www.springframework.org/schema/context"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="persona1" class="com.springpractica2.beans.Empleado">
+		<property name="empleadoId" value="102"/>
+		<property name="empleadoNombre" value="Machou"/>
+		<property name="empleadoDireccion" value="Big Bang"/>
+	</bean>
+	<bean id="empleado2" class="com.springpractica2.beans.Empleado">
+		<property name="empleadoId" value="103"/>
+		<property name="empleadoNombre" value="Kevin"/>
+		<property name="empleadoDireccion" value="De Piuga"/>
+	</bean>
+	<bean id="empleado3" class="com.springpractica2.beans.Empleado">
+		<property name="empleadoId" value="104"/>
+		<property name="empleadoNombre" value="Everardo"/>
+		<property name="empleadoDireccion" value="De Cordova"/>
+	</bean>    
+</beans>
+
+

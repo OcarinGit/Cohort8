@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://service.soappractica3aleatorios.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://service.soappractica3aleatorios.com" xmlns:intf="http://service.soappractica3aleatorios.com" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+
+   <wsdl:message name="aleatoriosRequest">
+
+      <wsdl:part name="cantidad" type="xsd:int">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="aleatoriosResponse">
+
+      <wsdl:part name="aleatoriosReturn" type="xsd:string">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="AleatoriosService">
+
+      <wsdl:operation name="aleatorios" parameterOrder="cantidad">
+
+         <wsdl:input message="impl:aleatoriosRequest" name="aleatoriosRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:aleatoriosResponse" name="aleatoriosResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="AleatoriosServiceSoapBinding" type="impl:AleatoriosService">
+
+      <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="aleatorios">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="aleatoriosRequest">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://service.soappractica3aleatorios.com" use="encoded"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="aleatoriosResponse">
+
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://service.soappractica3aleatorios.com" use="encoded"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="AleatoriosServiceService">
+
+      <wsdl:port binding="impl:AleatoriosServiceSoapBinding" name="AleatoriosService">
+
+         <wsdlsoap:address location="http://localhost:8080/SoapPractica3Aleatorios/services/AleatoriosService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

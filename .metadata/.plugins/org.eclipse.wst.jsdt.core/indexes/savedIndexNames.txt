@@ -1,0 +1,6 @@
+INDEX VERSION 1.4+E:\Ocarin\Generation\Generation 2018B\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3427676790.index
+3704366475.index
+989922066.index
+2861534559.index
+3551804691.index

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.algoritmosbasicos.main.MostrarNombres&apos; to &apos;AppMostrarNombres&apos;&#x0D;&#x0A;- Original project: &apos;AlgoritmosBasicos&apos;&#x0D;&#x0A;- Original element: &apos;com.algoritmosbasicos.main.MostrarNombres&apos;&#x0D;&#x0A;- Renamed element: &apos;com.algoritmosbasicos.main.AppMostrarNombres&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MostrarNombres&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.algoritmosbasicos.main{MostrarNombres.java[MostrarNombres" matchStrategy="1" name="AppMostrarNombres" qualified="false" references="true" similarDeclarations="false" stamp="1528908811728" textual="false" version="1.0"/>
+</session>

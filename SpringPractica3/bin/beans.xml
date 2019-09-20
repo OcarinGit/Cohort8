@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:context ="http://www.springframework.org/schema/context"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="domBean1" class="com.springpractica3.model.Domicilio">
+		<property name="calle" value="Champs Elysees"/>
+		<property name="numero" value="666"/>
+		<property name="codigoPostal" value="69693"/>
+	</bean>
+	<bean id="empBean1" class="com.springpractica3.model.Empleado">
+		<property name="empleadoId" value="1"/>
+		<property name="empleadoNombre" value="El Macho"/>
+		<constructor-arg ref="domBean1"></constructor-arg>
+	</bean>
+	<bean id="domicilioBean2" class="com.springpractica3.model.Domicilio">
+		<property name="calle" value="Olympo"/>
+		<property name="numero" value="777"/>
+		<property name="codigoPostal" value="69693"/>
+	</bean>
+	<bean id="empleadoBean2" class="com.springpractica3.model.Empleado">
+		<property name="empleadoId" value="2"/>
+		<property name="empleadoNombre" value="El Machou"/>
+		<property name="empleadoDomicilio" ref="domicilioBean2"/>
+		<!-- <property name="empleadoPuesto" ref="puestoBean2"/> -->
+	</bean>
+</beans>
+
+
+

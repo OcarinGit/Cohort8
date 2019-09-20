@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device, initial-scale=1"
+		http-equiv="X-UA-Compatible" />
+	<h:outputStylesheet library="css" name="bootstrap.min.css"></h:outputStylesheet>
+	<h:outputStylesheet library="css" name="style.css"></h:outputStylesheet>
+	<title>Editar Producto</title>
+</h:head>
+<h:body>
+	<h:form styleClass="form-horizontal" id="frmEditarProducto">
+		<div class="form-group">
+			<div class="col-sm-2"> </div>
+				<h2 class="col-sm-4">Editar Producto</h2>
+		</div>
+		<hr/>
+		<div class="form-group">
+			<h:outputLabel for="txtIdProducto" value="Id del Producto" styleClass="control-label col-sm-4"/>
+			<div class="col-sm-4">
+				<h:inputText id="txtIdProducto" value="#{objEditarRegistro.idProductoBean}" validatorMessage="Id del Producto es Obligatorio" styleClass="form-control" required="true" requiredMessage="Por favó introduce el Id del Producto"><f:validateRequired/> </h:inputText>
+			</div>
+			<h:message for="txtIdProducto" styleClass="text text-danger"></h:message>
+		</div>
+		<div class="form-group">
+			<h:outputLabel for="txtNombreProducto" value="Nombre del Producto" styleClass="control-label col-sm-4"/>
+			<div class="col-sm-4">
+				<h:inputText id="txtNombreProducto" value="#{objEditarRegistro.nombreProductoBean}" validatorMessage="Nombre del Producto es Obligatorio" styleClass="form-control" required="true" requiredMessage="Por favó introduce el Nombre del Producto"><f:validateRequired/> </h:inputText>
+			</div>
+			<h:message for="txtNombreProducto" styleClass="text text-danger"></h:message>
+		</div>
+		<div class="form-group">
+			<h:outputLabel for="txtPrecioProducto" value="Precio del Producto" styleClass="control-label col-sm-4"/>
+			<div class="col-sm-4">
+				<h:inputText id="txtPrecioProducto" value="#{objEditarRegistro.precioProductoBean}" validatorMessage="Precio del Producto es Obligatorio" styleClass="form-control" required="true" requiredMessage="Por favó introduce el Precio del Producto"><f:validateRequired/> </h:inputText>
+			</div>
+			<h:message for="txtPrecioProducto" styleClass="text text-danger"></h:message>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<h:commandButton styleClass="btn btn-warning updateBtnStyle" value="Actualiza Producto" action="#{productoBean.actualizarDetallesProducto(objEditarRegistro)}"></h:commandButton>
+			</div>
+		</div>
+	</h:form>
+	
+	<h:outputScript library="js" name="jquery-3.3.1.min.js"></h:outputScript>
+	<h:outputScript library="js" name="bootstrap.min.js"></h:outputScript>
+	<h:outputScript library="js" name="myScriptitu.js"></h:outputScript>
+</h:body>
+</html>

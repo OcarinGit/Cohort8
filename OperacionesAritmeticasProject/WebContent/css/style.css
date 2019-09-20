@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+
+h2
+{
+	color:blue;
+}
+
+.container
+{
+	background-color: azure;
+}
+
+header
+{
+	background-color: beige;
+}
+
+nav
+{
+	background-color: aquamarine;
+}
+
+section
+{
+	background-color: bisque;
+}
+
+footer
+{
+	background-color: blanchedalmond;
+}
