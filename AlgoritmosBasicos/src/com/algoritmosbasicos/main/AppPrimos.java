@@ -5,30 +5,42 @@ import java.util.Scanner;
 public class AppPrimos {
 
 	public static void main(String[] args) {
-		int iNum=0;
-		boolean isPrimo=true;
-		char cRes=' ';
+
+		// declaracion de variables
 		
+		int numeroEvaluar = 0;
+		boolean isPrimo = true;
+		char respuestaSalida = ' ';
+		
+		// creacion objetos
+
 		Scanner entrada = new Scanner(System.in);
 		
 		do
 		{
-			isPrimo=true;
-			System.out.println("Dame un número:");
-			iNum=entrada.nextInt();
+			// entrada de valores
+
+			System.out.println("Dame un nï¿½mero:");
+			numeroEvaluar = entrada.nextInt();
 			
-			for(int cont=2;cont<iNum;cont++)
+			// proceso
+
+			for(int contador =2; contador < numeroEvaluar; contador++)
 			{
-				if(iNum%cont==0)
+				if( numeroEvaluar % contador == 0 )
 				{
 					isPrimo=false;
 				}
 			}
-			System.out.println("El número introducido es primo? "+isPrimo);
+
+			// salida de valores
+
+			System.out.println("El nï¿½mero introducido es primo? "+isPrimo);
 			
-			System.out.println("Deseas Calcular otro Número(S/N)?");
-			cRes=entrada.next().charAt(0);
-		}while(cRes=='S' || cRes=='s');
+			System.out.println("Deseas Calcular otro Nï¿½mero(S/N)?");
+			respuestaSalida = entrada.next().charAt(0);
+
+		} while(respuestaSalida == 'S' || respuestaSalida == 's');
 	}
 
 }
